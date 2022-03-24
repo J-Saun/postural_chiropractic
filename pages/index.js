@@ -3,9 +3,9 @@ import Link from 'next/dist/client/link';
 export default function Home() {
   return (
     <div className="app">
-      <div className="container bg-success page">
-        <h1>Landing</h1>
-        <p>Home page</p>
+      <div className="container">
+        <h1>Auto Accident Specialist, Spinal Rehab and Wellness Care</h1>
+        <h2>Nature needs no help, just no interference.</h2>
       </div>
     </div>
   );
