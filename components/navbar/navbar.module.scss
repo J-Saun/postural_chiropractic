@@ -1,0 +1,78 @@
+$color: rgb(0, 255, 0);
+$color-hover: rgb(0, 0, 0);
+$bg-color: rgb(88, 88, 88);
+$bg-color-hover: rgb(88, 216, 255);
+
+/* Fira Sans */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+#container {
+  width: 100%;
+  display: inline-block;
+}
+
+/** NAVIGATION BAR */
+.navbar {
+  overflow: hidden;
+  // background-color: $bg-color;
+  // position: fixed;
+  // top: 0;
+  width: 100%;
+  border-bottom: 1px solid $bg-color;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+
+    li {
+      color: $color;
+      display: inline;
+      font-family: 'Fira Sans', sans-serif;
+      font-size: 17px;
+      text-transform: uppercase;
+
+      a {
+        color: $color;
+        text-decoration: none;
+        padding: 14px;
+        &:hover {
+          color: $color-hover;
+          background-color: $bg-color-hover;
+        }
+      }
+    }
+  }
+}
+/** NAVBAR LOGO */
+.logo {
+  background-color: white;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  div {
+    text-align: center;
+    margin-left: 0.5em;
+    font-family: 'Fira Sans', sans-serif;
+    // text-transform: uppercase;
+    letter-spacing: 3px;
+
+    .topName {
+      color: $color;
+      font-size: 2em;
+      font-weight: 700;
+    }
+    .bottomName {
+      // color: $color;
+      font-weight: 600;
+    }
+  }
+}
+
+.content {
+  text-align: center;
+}

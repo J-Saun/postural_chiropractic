@@ -1,13 +1,10 @@
 import Link from 'next/link';
 
-const About = () => {
+const Services = () => {
   return (
     <div className="container bg-success page">
-      <h1>About us</h1>
-      <p>
-        Notice how a loading spinner showed up while my content was "loading"?
-        Pretty neat, huh?
-      </p>
+      <h1>Services</h1>
+      <p>Services page cards</p>
       <Link href="/">
         <a className="btn btn-light">Go back home</a>
       </Link>
@@ -15,4 +12,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Services;

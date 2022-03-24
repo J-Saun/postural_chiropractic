@@ -1,9 +1,12 @@
-import HelloWorld from '../components/hello-world'
+import Link from 'next/dist/client/link';
 
 export default function Home() {
   return (
     <div className="app">
-      <HelloWorld />
+      <div className="container bg-success page">
+        <h1>Landing</h1>
+        <p>Home page</p>
+      </div>
     </div>
-  )
+  );
 }
