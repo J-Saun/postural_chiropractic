@@ -19,6 +19,9 @@ export default function Home() {
         <p className={styles.description}>
           This is where we will host until the build is finalized
         </p>
+        <Link href="/about">
+          <a className="btn btn-light">About us</a>
+        </Link>
       </main>
 
       <footer className={styles.footer}>
