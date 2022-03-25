@@ -9,21 +9,18 @@ const Services = () => {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc. Quis vel eros donec ac odio tempor orci dapibus ultrices.',
       price: 50,
-      button: 'Schedule Now',
     },
     {
       title: 'Service Two',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin ac. Arcu non odio euismod lacinia at.',
       price: 100,
-      button: 'Schedule Now',
     },
     {
       title: 'Service Three',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat nibh sed pulvinar proin. Eu turpis egestas pretium aenean.',
       price: 150,
-      button: 'Schedule Now',
     },
   ];
 
