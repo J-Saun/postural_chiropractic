@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const About = () => {
   return (
-    <div className="container bg-success page">
+    <div className="container page">
       <h1>About us</h1>
       <h3>Dr. Evan P. Welfare, DC</h3>
       <h5>
