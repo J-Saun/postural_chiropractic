@@ -1,36 +1,23 @@
-$color: rgb(0, 255, 0);
+$color: rgba(13, 204, 13, 0.76);
 $color-hover: rgb(0, 0, 0);
-$bg-color: rgb(88, 88, 88);
+$bg-color: rgb(255, 255, 255);
 $bg-color-hover: rgb(88, 216, 255);
 
 /* Fira Sans */
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
-#container {
-  width: 100%;
-  display: inline-block;
-}
-
 /** NAVIGATION BAR */
 .navbar {
-  overflow: hidden;
-  // background-color: $bg-color;
-  // position: fixed;
-  // top: 0;
-  width: 100%;
-  border-bottom: 1px solid $bg-color;
-  padding: 0.5em;
+  background-color: $bg-color;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  ul {
-    text-align: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 15px;
+  border-bottom: 1px solid $bg-color;
+  padding: 0.3em;
 
+  ul {
+    padding: 15px;
     li {
-      color: $color;
       display: inline;
       font-family: 'Fira Sans', sans-serif;
       font-size: 17px;
@@ -38,7 +25,6 @@ $bg-color-hover: rgb(88, 216, 255);
 
       a {
         color: $color;
-        text-decoration: none;
         padding: 14px;
         &:hover {
           color: $color-hover;
@@ -47,32 +33,24 @@ $bg-color-hover: rgb(88, 216, 255);
       }
     }
   }
-}
-/** NAVBAR LOGO */
-.logo {
-  background-color: white;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  div {
-    text-align: center;
-    margin-left: 0.5em;
-    font-family: 'Fira Sans', sans-serif;
-    // text-transform: uppercase;
-    letter-spacing: 3px;
+  // /** NAVBAR LOGO */
+  .logo {
+    display: flex;
+    align-items: center;
+    div {
+      text-align: center;
+      margin-left: 0.5em;
+      text-transform: uppercase;
+      letter-spacing: 3px;
 
-    .topName {
-      color: $color;
-      font-size: 2em;
-      font-weight: 700;
-    }
-    .bottomName {
-      // color: $color;
-      font-weight: 600;
+      .topName {
+        color: $color;
+        font-size: 2em;
+        font-weight: 700;
+      }
+      .bottomName {
+        font-weight: 600;
+      }
     }
   }
-}
-
-.content {
-  text-align: center;
 }
