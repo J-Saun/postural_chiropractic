@@ -1,3 +1,4 @@
+import Link from 'next/dist/client/link';
 import styles from './button.module.scss';
 
 /*         Button Types
@@ -10,24 +11,30 @@ import styles from './button.module.scss';
 <button className={styles.offsetBtn}>Offset</button> 
 */
 
-export function FillButton() {
+export function FillButton(props) {
   return (
     <div className={styles.fillBtn}>
-      <button className={styles.fill}>Schedule Now!</button>
+      <Link href='/contact'>
+        <button className={styles.fill}>Schedule Now!</button>
+      </Link>
     </div>
   );
 }
-export function PulseButton() {
+export function PulseButton(props) {
   return (
     <div className={styles.pulseBtn}>
-      <button className={styles.pulse}>Schedule Now!</button>
+      <Link href='/contact'>
+        <button className={styles.pulse}>Schedule Now!</button>
+      </Link>
     </div>
   );
 }
-export function CloseButton() {
+export function CloseButton(props) {
   return (
     <div className={styles.btnThree}>
-      <button className={styles.raise}>Schedule Now!</button>
+      <Link href='/contact'>
+        <button className={styles.raise}>Schedule Now!</button>
+      </Link>
     </div>
   );
 }

@@ -17,14 +17,14 @@ $sec: green;
   align-items: center;
   // background: white;
   // z-index: 1;
-  background-color: rgba(0, 0, 0, 0.2);
+  // background-color: rgba(0, 0, 0, 0.2);
 }
 
 // Card Set One
 .cardOne {
   position: relative;
   width: 350px;
-  height: 500px;
+  // height: 550px;
   // align-items: center;
   // justify-content: center;
   // display: flex;
@@ -52,6 +52,8 @@ $sec: green;
     // justify-content: space-around;
     text-align: center;
     padding: 1em;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     // background-color: #00000038;
 
     .priceContainer {
@@ -77,6 +79,12 @@ $sec: green;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    // border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 
   .box::before {

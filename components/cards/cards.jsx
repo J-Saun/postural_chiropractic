@@ -3,7 +3,7 @@ import { FillButton, PulseButton, CloseButton } from '../buttons/button';
 import styles from './cards.module.scss';
 
 export function CardOne(props) {
-  const { title, description, price, priceUnit } = props;
+  const { title, description, price, priceUnit, href } = props;
 
   return (
     <div className={styles.cardOne}>
@@ -22,7 +22,7 @@ export function CardOne(props) {
       </div>
 
       <div className={styles.footer}>
-        <FillButton />
+        <FillButton href={href} />
       </div>
     </div>
     // </div>
@@ -30,7 +30,7 @@ export function CardOne(props) {
 }
 
 export function CardTwo(props) {
-  const { title, description, price, priceUnit } = props;
+  const { title, description, price, priceUnit, href } = props;
 
   return (
     <div className={styles.cardTwo}>
@@ -43,7 +43,7 @@ export function CardTwo(props) {
             <span className={styles.priceUnit}>{priceUnit}</span>
           </div>
           <p>{description}</p>
-          <PulseButton />
+          <PulseButton href={href} />
         </div>
 
         {/* <div className={styles.footer}>
@@ -54,7 +54,7 @@ export function CardTwo(props) {
 }
 
 export function CardThree(props) {
-  const { title, description, price, priceUnit } = props;
+  const { title, description, price, priceUnit, href } = props;
   // const { cardThree } = props.styles.cardThree;
 
   return (
@@ -70,7 +70,7 @@ export function CardThree(props) {
         </div>
         <div className={styles.footer}>
           {/* <ButtonThree /> */}
-          <CloseButton />
+          <CloseButton href={href} />
         </div>
       </div>
     </div>
