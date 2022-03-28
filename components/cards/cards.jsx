@@ -1,31 +1,25 @@
 import { FillButton, PulseButton, CloseButton } from '../buttons/button';
 
-import styles from './cards.module.scss';
-
 export function CardOne(props) {
   const { title, description, price, priceUnit, href } = props;
 
   return (
-    <div className={styles.cardOne}>
-      {/* <div className={styles.box}> */}
-      {/* <div className={styles.glass}></div> */}
-
-      <div className={styles.header}>
+    <div className='card cardOne'>
+      <div className='header'>
         <p>{title}</p>
       </div>
-      <div className={styles.body}>
-        <div className={styles.priceContainer}>
-          <span className={styles.price}>{price}</span>
-          <span className={styles.priceUnit}>{priceUnit}</span>
-          <p>{description}</p>
+      <div className='body'>
+        <div className='priceContainer'>
+          <span className='price'>{price}</span>
+          <span className='priceUnit'>{priceUnit}</span>
         </div>
+        <p>{description}</p>
       </div>
 
-      <div className={styles.footer}>
+      <div className='footer'>
         <FillButton href={href} />
       </div>
     </div>
-    // </div>
   );
 }
 
@@ -33,20 +27,20 @@ export function CardTwo(props) {
   const { title, description, price, priceUnit, href } = props;
 
   return (
-    <div className={styles.cardTwo}>
-      <div className={styles.box}>
-        <div className={styles.glass}></div>
-        <div className={styles.content}>
+    <div className='card cardTwo'>
+      <div className='box'>
+        <div className='glass'></div>
+        <div className='content'>
           <h3>{title}</h3>
-          <div className={styles.priceContainer}>
-            <span className={styles.price}>{price}</span>
-            <span className={styles.priceUnit}>{priceUnit}</span>
+          <div className='priceContainer'>
+            <span className='price'>{price}</span>
+            <span className='priceUnit'>{priceUnit}</span>
           </div>
           <p>{description}</p>
           <PulseButton href={href} />
         </div>
 
-        {/* <div className={styles.footer}>
+        {/* <div className='.footer}>
         </div> */}
       </div>
     </div>
@@ -55,22 +49,24 @@ export function CardTwo(props) {
 
 export function CardThree(props) {
   const { title, description, price, priceUnit, href } = props;
-  // const { cardThree } = props.styles.cardThree;
 
   return (
-    <div className={styles.cardThree}>
-      <div className={styles.cardThree}>
-        <div className={styles.head}>
-          <h3>{title}</h3>
+    <div class='card card-three shadow-sharp'>
+      <div class='card-content'>
+        <div className='header'>
+          <h2>{title}</h2>
+          <hr />
         </div>
-        <div className={styles.body}>
+        <div className='body'>
+          <div className='price-container'>
+            <span className='price'>{price}</span>
+            <span className='priceUnit'>{priceUnit}</span>
+          </div>
           <p>{description}</p>
-          <span>{price}</span>
-          <span>{priceUnit}</span>
         </div>
-        <div className={styles.footer}>
-          {/* <ButtonThree /> */}
-          <CloseButton href={href} />
+
+        <div className='footer'>
+          <PulseButton href={href} />
         </div>
       </div>
     </div>

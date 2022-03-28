@@ -1,3 +1,6 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
 //=== Set button colors
 // If you wonder why use Sass vars or CSS custom properties...
 // Make a map with the class names and matching colors
@@ -10,6 +13,11 @@ $colors: (
   slide: #c866c8,
   offset: #5219bc,
 );
+$light-shade1: #f4f4ef;
+$light-accent1: #58b1b3;
+$main-brand-color1: #005908;
+$dark-accent1: #5f7e94;
+$dark-shade1: #181923;
 
 // Button fills with color
 .fillBtn {
@@ -21,7 +29,7 @@ $colors: (
     background: none;
     border: 2px solid #000066;
     border-radius: 5px;
-    color: black;
+    // color: black;
     font: inherit;
     letter-spacing: 2px;
     line-height: 1;

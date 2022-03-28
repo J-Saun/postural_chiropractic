@@ -1,39 +1,40 @@
 import Link from 'next/dist/client/link';
-import styles from './button.module.scss';
+// import from './button.module.scss';
+// import from '';
 
 /*         Button Types
-<button className={styles.fillBtn}>Fill In</button>
-<button className={styles.pulseBtn}>Pulse</button>
-<button className={styles.closeBtn}>Close</button>
-<button className={styles.raiseBtn}>Raise</button>
-<button className={styles.upBtn}>Fill Up</button>
-<button className={styles.slideBtn}>Slide</button>
-<button className={styles.offsetBtn}>Offset</button> 
+<button className={fillBtn}>Fill In</button>
+<button className={pulseBtn}>Pulse</button>
+<button className={closeBtn}>Close</button>
+<button className={raiseBtn}>Raise</button>
+<button className={upBtn}>Fill Up</button>
+<button className={slideBtn}>Slide</button>
+<button className={offsetBtn}>Offset</button> 
 */
 
 export function FillButton(props) {
   return (
-    <div className={styles.fillBtn}>
+    <div className='fillBtn'>
       <Link href='/contact'>
-        <button className={styles.fill}>Schedule Now!</button>
+        <button className='fill'>Schedule Now!</button>
       </Link>
     </div>
   );
 }
 export function PulseButton(props) {
   return (
-    <div className={styles.pulseBtn}>
+    <div className='pulseBtn'>
       <Link href='/contact'>
-        <button className={styles.pulse}>Schedule Now!</button>
+        <button className='pulse'>Schedule Now!</button>
       </Link>
     </div>
   );
 }
 export function CloseButton(props) {
   return (
-    <div className={styles.btnThree}>
+    <div className='btnThree'>
       <Link href='/contact'>
-        <button className={styles.raise}>Schedule Now!</button>
+        <button className='raise'>Schedule Now!</button>
       </Link>
     </div>
   );

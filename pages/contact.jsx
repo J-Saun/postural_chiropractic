@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 const Contact = () => {
   // Page Content
@@ -14,7 +15,11 @@ const Contact = () => {
   const cityStateZip = 'Orange Park, Fl 32073';
 
   return (
-    <div className="container page">
+    <div className='contact-page'>
+      <Head>
+        <title>Contact Us</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
       <h1>{headline}</h1>
       <h3>{subHeadline}</h3>
       <div>
@@ -39,9 +44,14 @@ const Contact = () => {
           <p>{cityStateZip}</p>
         </div>
       </div>
-
-      <Link href="/">
-        <a className="btn btn-light">Go back home</a>
+      <p>
+        Make An Appointment For A Free Consultation North Florida Chiropractic
+        Physical Therapy is a leading provider of Orange Park chiropractic
+        services. Call us today to schedule your free consultation and begin
+        your custom treatment plan.
+      </p>
+      <Link href='/'>
+        <a className='btn btn-light'>Go back home</a>
       </Link>
     </div>
   );
