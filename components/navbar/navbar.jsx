@@ -1,44 +1,53 @@
-import Link from 'next/dist/client/link';
 import Image from 'next/image';
-
-// import styles from './navbar.module.scss';
-
-// current logo image path
-import logo from '/public/logo/logo_thin_band_darkened.svg';
+import Link from '../buttons/Link';
+import Logo from '../logo';
 
 export default function Navbar() {
   const logoWidth = 70;
   const logoHeight = 70;
+  // Company Name
+  const brandFirst = 'Postural';
+  const brandLast = 'Chiropractic';
+  const attrs = '';
 
   return (
-    <div id='container'>
-      <nav className='navbar'>
-        <div className='logo'>
-          <a href='/'>
-            <Image
-              src={logo}
-              alt='Company Logo'
-              width={logoWidth}
-              height={logoHeight}
-            />
+    <nav class='container navbar navbar-expand-lg navbar-light bg-light'>
+      <div className='navbar__logo mr-2'>
+        <Logo width={logoWidth} height={logoHeight} />
+      </div>
+      <button
+        class='navbar-toggler'
+        type='button'
+        data-toggle='collapse'
+        data-target='#navbarTogglerDemo01'
+        aria-controls='navbarTogglerDemo01'
+        aria-expanded='false'
+        aria-label='Toggle navigation'
+      >
+        <span class='navbar-toggler-icon'></span>
+      </button>
+      <div class='collapse navbar-collapse ' id='navbarTogglerDemo01'>
+        <div className='navbar__title h4 m-0 navbar-brand'>
+          <a className='navbar-brand' href='#'>
+            <span>{brandFirst}</span>
+            <span>{brandLast}</span>
           </a>
-          <div>
-            <div className='topName'>Postural</div>
-            <div className='bottomName'>Chiropractic</div>
-          </div>
         </div>
-        <div className='nav-links'>
-          <Link href='/about'>
-            <a className='link'>About</a>
+        <div className='navbar-nav ml-auto mt-2 mt-lg-0'>
+          <Link href={'/'} {...attrs} className={'nav-item active'}>
+            Home
+          </Link>
+          <Link className={'nav-item'} href='/about'>
+            About
           </Link>{' '}
-          <Link href='/services'>
-            <a className='link'>Services</a>
+          <Link className={'nav-item'} href='/services'>
+            Services
           </Link>{' '}
-          <Link href='/contact'>
-            <a className='link'>Contact</a>
+          <Link className={'nav-item'} href='/contact'>
+            Contact
           </Link>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }

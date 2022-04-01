@@ -1,55 +1,63 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import Footer from '../components/footer';
 
 const About = () => {
+  const owner = 'Dr. Evan P. Welfare, DC';
+  const aboutOwner =
+    'My name is Dr. Evan P. Welfare, DC. I am a Board Certified Chiropractic Physician in the state of Florida, with an emphasis on musculoskeletal spinal disorders and postural correction. I will take a thorough case history and go over a report of findings with you in order to determine the best care plan for you as an individual. My approach is designed to meet your needs through a number of services: Chiropractic manipulation, myofascial release, mechanical traction and rehabilitative techniques.';
+  const edOne =
+    'Bachelor of Arts in English at The Florida State University Class of 2005';
+  const edTwo = 'Doctor of Chiropractic at Life University Class of 2015';
+  const yrsPracticing = 'Years Practicing: 7';
+
   return (
-    <div className='about-page'>
-      <Head>
+    <>
+      <Head className='page__header'>
         <title>About Us</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <link
+          rel='stylesheet'
+          href='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css'
+          integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm'
+          crossorigin='anonymous'
+        ></link>
       </Head>
-      <h1>About us</h1>
-      <h3>Dr. Evan P. Welfare, DC</h3>
-      <h5>
-        Here at Postural Chiropractic we provide therapeutic modalities to help
-        the recovery and healing process.
-      </h5>
-      <p>
-        Chiropractic adjustment to align the spine and restore proper posture in
-        order to relieve nerve interference within the nervous and
-        musculoskeletal system.
-      </p>
-      <p>
-        Write about yourself here: Dr. Evan P. Welfare, DC is a Board Certified
-        Chiropractic Physician in the state of Florida with an emphasis on
-        musculoskeletal spine disorders and postural correction by utilizing
-        chiropractic manipulation, myofascial release, and rehabilitative
-        techniques. Dr. Welfare is a graduate of Blank College of Chiropractic
-        in City, State. He completed his Doctor of Chiropractic degree in August
-        of 2006 and currently practices in the Orange Park area. Dr. Welfare has
-        an evidence based practice that utilizes the latest research in
-        biomechanics, nutrition, rehabilitation, and treatment protocols. He
-        combines this unique skill set to provide the highest quality of care
-        for his patients.
-        <h5>Education:</h5>
-        <ul>
-          <li>BS, (This) University DC, Logan University</li>
-          <li>Years Practicing: 10</li>
-        </ul>
-        <h5>Memberships & Associations:</h5>
-        <ul>
-          <li>
-            Example: Associations Florida Chiropractic Physicians
-            Association(2010) Florida
-          </li>
-          <li>Example: Chiropractic Association(2006)</li>
-          <li>Example: Another Association(2006)</li>
-        </ul>
-      </p>
-      <Link href='/'>
-        <a className='btn btn-light'>Go back home</a>
-      </Link>
-    </div>
+
+      {/* <h1>About us</h1> */}
+      {/* <h3>{companySlogan}</h3> */}
+      {/* <p>{subSlogan}</p> */}
+      {/* <p>{aboutService}</p> */}
+
+      <div className='page'>
+        <div className='container container--medium'>
+          <div className='section about-page'>
+            {/* <div className='has-cover'> */}
+            {/* <img className='cover-img' src='/family_photo.avif' alt='' /> */}
+            {/* </div> */}
+            <div className='owner-content'>
+              <h4>{owner}</h4>
+              <p>{aboutOwner}</p>
+              <p>
+                <h5>Education:</h5>
+                <ul>
+                  <li>{edOne}</li>
+                  <li>{edTwo}</li>
+                  <li>{yrsPracticing}</li>
+                </ul>
+              </p>
+            </div>
+            <div>
+              <img className='' src='/family_photo.avif' alt='' />
+            </div>
+          </div>
+          {/* <Link href='/'>
+          <a className='btn btn-light'>Go back home</a>
+        </Link> */}
+        </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 
