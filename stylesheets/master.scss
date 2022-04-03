@@ -4,42 +4,45 @@
 @import 'abstracts/variables';
 
 // Base
-@import 'base/reset';
 @import 'base/base';
 @import 'base/helpers';
+@import 'base/reset';
 @import 'base/typography';
 
 // Utilities
-@import 'utilities/grid';
+@import 'utilities/accessibility';
+@import 'utilities/clearing';
 @import 'utilities/flex';
+@import 'utilities/grid';
 @import 'utilities/spacing';
 @import 'utilities/sizing';
 @import 'utilities/typography';
-@import 'utilities/accessibility';
-@import 'utilities/clearing';
 
 // Components
-@import 'components/buttons';
-@import 'components/icons';
-@import 'components/forms';
-@import 'components/tables';
-@import 'components/menus';
 @import 'components/avatars';
-@import 'components/cover';
+@import 'components/banner';
+@import 'components/buttons';
 @import 'components/cards';
 @import 'components/containers';
-@import 'components/banner';
+@import 'components/cover';
+@import 'components/icons';
+@import 'components/forms';
+@import 'components/menus';
+@import 'components/quote';
+@import 'components/tables';
 @import 'components/text-block';
 
 // Layouts
-@import 'layouts/site';
+@import 'layouts/announcement';
+@import 'layouts/cta';
 @import 'layouts/header';
 @import 'layouts/footer';
 @import 'layouts/hero';
-@import 'layouts/announcement';
-@import 'layouts/section';
-@import 'layouts/post';
+@import 'layouts/navbar';
 @import 'layouts/page';
+@import 'layouts/post';
+@import 'layouts/section';
+@import 'layouts/site';
 
 // Color variations
 @import 'variations/modes';

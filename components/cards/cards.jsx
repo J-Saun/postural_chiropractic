@@ -29,10 +29,13 @@ export function CardTwo(props) {
   const { title, description, price, priceUnit, href } = props;
 
   return (
-    <div className='card cardTwo'>
-      <div className='box'>
-        <div className='glass'></div>
-        <div className='content'>
+    // <div className='card cardTwo'>
+    //   <div className='box'>
+    //     <div className='glass'></div>
+    //     <div className='content'>
+    <div>
+      <div>
+        <div>
           <h3>{title}</h3>
           <div className='priceContainer'>
             <span className='price'>{price}</span>
@@ -50,8 +53,10 @@ export function CardThree(props) {
   const { title, description, price, priceUnit, href } = props;
 
   return (
-    <div className='card card-three shadow-sharp'>
-      <div className='card-content'>
+    // <div className='card card-three shadow-sharp'>
+    //   <div className='card-content'>
+    <div>
+      <div>
         <div className='header'>
           <h2>{title}</h2>
           <hr />

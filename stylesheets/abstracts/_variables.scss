@@ -85,7 +85,7 @@ $color-primary-dark: #00296b !default;
 $color-primary: rgb(1, 114, 254) !default;
 $color-primary-light: rgba(1, 197, 255, 1) !default;
 
-$color-highlight: #fdc500 !default;
+$color-highlight: #ffd500 !default;
 
 // Base
 $color-body-text: #2c343c !default;
@@ -103,6 +103,11 @@ $primary-gradient: linear-gradient(
   $color-primary 43%,
   $color-primary-light 100%
 );
+$primary-gradient-reverse: linear-gradient(
+  49deg,
+  $color-primary-light 43%,
+  $color-primary 100%
+);
 
 // Code blocks
 $color-code-border: #eceef1 !default;
@@ -119,11 +124,13 @@ $color-hr-border: #eceef1 !default;
 
 // Buttons
 $color-btn-text: #fff !default;
+$color-btn-dark-text: rgb(75, 75, 75) !default;
 $color-btn-bg: $color-primary !default;
 $color-btn-alt-text: #fff !default;
 $color-btn-alt-bg: #2c343c !default;
 $color-bold-btn-shadow: #bfc7d0 !default;
 $color-gray-btn-alt-bg: #8696a6 !default;
+$color-btn-cta-bg: #fdc500 !default;
 
 // Forms
 $color-input-text: #2c343c !default;
@@ -140,13 +147,22 @@ $color-classic-card-shadow: rgba(44, 52, 60, 0.1) !default;
 $color-bold-card-border: #2c343c !default;
 
 // Main nav
-$color-nav-link-text: #ffffff !default;
+$color-nav-link-text: #4d4d4d !default;
 $color-nav-link-border: $color-primary !default;
 $color-nav-mobile-bg: #fff !default;
-$color-nav-mobile-border: #eceef1 !default;
+$color-nav-mobile-border: #00296b !default;
 $color-nav-mobile-overlay: rgba(236, 238, 241, 0.8) !default;
 $color-bold-nav-mobile-border: #2c343c !default;
 $color-bold-nav-mobile-overlay: rgba(44, 52, 60, 0.8) !default;
+
+// Navbar
+$color-navbar-bg: #fff !default;
+$color-navbar-dark-text: rgb(75, 75, 75) !default;
+$color-navbar-bg: $color-primary !default;
+$color-navbar-alt-text: #fff !default;
+$color-navbar-alt-bg: #2c343c !default;
+$color-bold-navbar-shadow: #bfc7d0 !default;
+$color-gray-navbar-alt-bg: #8696a6 !default;
 
 // Header
 $color-header-border: #eceef1 !default;
@@ -154,6 +170,7 @@ $color-bold-header-border: #2c343c !default;
 
 // Footer
 $color-footer-border: #eceef1 !default;
+$color-footer-bg: #2c343c !default;
 $color-bold-footer-border: #2c343c !default;
 
 // Announcement
@@ -238,6 +255,10 @@ $color-dark-primary-sect-btn-text: #2c343c !default;
 $color-dark-primary-sect-btn-bg: #fff !default;
 $color-dark-primary-sect-btn-alt-bg: #242a31 !default;
 $color-dark-secondary-sect-bg: #242a31 !default;
+
+// Box Shadows
+$shadow-short: '';
+$shadow-long: '0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09)';
 
 // Boxed layout
 $color-dark-boxed-bg: #1b2025 !default;

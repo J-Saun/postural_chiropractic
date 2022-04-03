@@ -1,17 +1,16 @@
 import Link from 'next/dist/client/link';
-// import from './button.module.scss';
-// import from '';
 
-/*         Button Types
-<button className={fillBtn}>Fill In</button>
-<button className={pulseBtn}>Pulse</button>
-<button className={closeBtn}>Close</button>
-<button className={raiseBtn}>Raise</button>
-<button className={upBtn}>Fill Up</button>
-<button className={slideBtn}>Slide</button>
-<button className={offsetBtn}>Offset</button> 
-*/
-
+export function CTAButton(props) {
+  const { linkTo, label } = props;
+  const href = `/${linkTo}`;
+  return (
+    <>
+      <Link href={href}>
+        <button className='cta-btn'>{label}</button>
+      </Link>
+    </>
+  );
+}
 export function FillButton(props) {
   return (
     <div className='fillBtn'>

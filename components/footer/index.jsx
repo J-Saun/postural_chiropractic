@@ -1,10 +1,9 @@
 import Logo from '../logo';
-import PhoneIcon from '../icons';
-import Link from '../buttons/Link';
+import Icon from '../icons';
 
 export default function Footer() {
   const phone = '(904)330-4727';
-  const fax = '(904)330-4727';
+  const fax = '(904)375-1170';
   const email = 'dcwelfare@gmail.com';
   const days = 'Monday - Friday';
   const hours = '9:00 AM - 6:00 PM';
@@ -12,53 +11,135 @@ export default function Footer() {
   const streetAddress = '1543 Kingsley Ave Bldg. 12';
   const cityStateZip = 'Orange Park, Fl 32073';
 
-  return (
-    <footer className='site-footer mode-dark'>
-      <div className='site-footer__nav py-3 py-md-4'>
-        <div className='container '>
-          <div className={'justify-md-center'}>
-            <Link href={'/'}></Link>
-          </div>
-        </div>
-      </div>
+  // <Logo width={'100'} />
 
-      <div className='container flex flex-wrap justify-around items-center text-center'>
-        {/* <div className='flex flex-wrap justify-around items-center text-center'> */}
-        <Logo width={'300'} />
-        <div>
+  return (
+    <footer className='footer'>
+      {/* Social Links Top Row*/}
+      <div className='group'>
+        <div className='social-showcase'>
           <div>
-            <ul className={'p-3'}>
-              <li>
-                <PhoneIcon />
-                <a> {phone}</a>
-              </li>
-              <li>
-                fax:<a> {fax}</a>
-              </li>
-              <li>
-                email:<a> {email}</a>
-              </li>
-            </ul>
-            <div className={'p-3'}>
-              <h4>{days}</h4>
-              <p>{hours}</p>
-              <p>{hoursMsg}</p>
-            </div>
+            <Icon
+              width={'50px'}
+              height={'50px'}
+              src={'icons/facebook-line.svg'}
+              color={'filter-primary'}
+            />
           </div>
-        </div>
-        <div>
-          <div className={'p-3'}>
-            <p>{streetAddress}</p>
-            <p>{cityStateZip}</p>
+          <div>
+            <Icon
+              width={'50px'}
+              height={'50px'}
+              src={'icons/instagram-line.svg'}
+              color={'filter-primary'}
+            />
           </div>
-          <div classNames={'site-footer__social p-3'}>
-            <i>icon</i>
-            <i>icon</i>
-            <i>icon</i>
+          <div>
+            <Icon
+              width={'50px'}
+              height={'50px'}
+              src={'icons/linkedin-line.svg'}
+              color={'filter-primary'}
+            />
           </div>
         </div>
       </div>
-      {/* </div> */}
+      {/* Footer Body Content */}
+      <div className='content'>
+        {/* Contact Info */}
+        <div className='group'>
+          <div className='footer-title'>
+            <span className=''>Contact Info</span>
+          </div>
+          <a>
+            <div className='icon-wrapper'>
+              <Icon
+                width={'40px'}
+                height={'40px'}
+                src={'icons/phone-fill.svg'}
+                color={'filter-white'}
+              />
+            </div>
+            <span className='highlight my-auto'>{phone}</span>
+          </a>
+          <a>
+            <div className='icon-wrapper'>
+              <Icon
+                width={'40px'}
+                height={'40px'}
+                src={'icons/printer-fill.svg'}
+                color={'filter-white'}
+              />
+            </div>
+            <span className='my-auto'>{fax}</span>
+          </a>
+          <div className=''>
+            <a>
+              <div className='icon-wrapper'>
+                <Icon
+                  width={'40px'}
+                  height={'40px'}
+                  src={'icons/mail-line.svg'}
+                  color={'filter-white'}
+                />
+              </div>
+              <span className='my-auto'>{email}</span>
+            </a>
+          </div>
+        </div>
+        <div>
+          {/* Schedule Hours */}
+          <div className='group'>
+            <div className='footer-title'>
+              <span className=''>Schedule</span>
+            </div>
+            <h4>{days}</h4>
+            <span>{hours}</span>
+            <p>{hoursMsg}</p>
+          </div>
+        </div>
+        {/* Location Info */}
+        <div className='group'>
+          <div className=''>
+            <div className='footer-title'>
+              <span className=''>Location</span>
+            </div>
+            <a>
+              <div className='mr-3 my-auto'>
+                <Icon
+                  width={'40px'}
+                  height={'40px'}
+                  src={'icons/map-pin-fill.svg'}
+                  color={'filter-white'}
+                />
+              </div>
+              <div className=''>
+                <span className='highlight d-block'>{streetAddress}</span>
+                <span className=''>{cityStateZip}</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        {/* Site Nav Links */}
+        <div className='group'>
+          <div className='footer-title'>
+            <span className=''>Site Navigation</span>
+          </div>
+          <div>
+            <a href='#'>FAQ</a>
+            <a href='#'>Pricing</a>
+            <a href='#'>Referral program</a>
+            <a href='#'>Affiliates</a>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }
+
+// <Icon
+//   width={'40px'}
+//   height={'40px'}
+//   src={'icons/copyright-fill.svg'}
+//   color={'filter-white'}
+// />

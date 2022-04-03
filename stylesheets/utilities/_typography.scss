@@ -1,82 +1,82 @@
-/**
- * Typography
- */
+// /**
+//  * Typography
+//  */
 
- /* Text alignment */
-.text-left {
-	text-align: left;
-}
+// /* Text alignment */
+// .text-left {
+//   text-align: left;
+// }
 
-.text-right {
-	text-align: right;
-}
+// .text-right {
+//   text-align: right;
+// }
 
-.text-center {
-	text-align: center;
-}
+// .text-center {
+//   text-align: center;
+// }
 
-/* Headings */
-.h1 {
-	@extend h1;
-}
+// /* Headings */
+// .h1 {
+//   @extend h1;
+// }
 
-.h2 {
-	@extend h2;
-}
+// .h2 {
+//   @extend h2;
+// }
 
-.h3 {
-	@extend h3;
-}
+// .h3 {
+//   @extend h3;
+// }
 
-.h4 {
-	@extend h4;
-}
+// .h4 {
+//   @extend h4;
+// }
 
-.h5 {
-	@extend h5;
-}
+// .h5 {
+//   @extend h5;
+// }
 
-.h6 {
-	@extend h6;
-}
+// .h6 {
+//   @extend h6;
+// }
 
-blockquote {
-	// color: rgba(0, 0, 0, 0.6);
-	// font-family: Tahoma, sans-serif;
-	font-size: 40px;
-	// width: 60%;
-	margin: 5vw auto;
-	&:before {
-		color: transparent;
-	}
-	cite {
-		//  color: $color-primary;
-		font-size: 1.5rem;
-		float: right;
-	 }
- }
- blockquote h1 {
-	font-size: 4rem;
- }
- blockquote p {
-	font-style: italic;
-	margin-bottom: 0;
- }
- 
- blockquote p::before,
- blockquote p::after {
-	content: "“";
-	font-family: Georgia;
-	font-size: 8rem;
-	margin: -2rem 0 0 -4rem;
-	position: absolute;
-	opacity: 0.5;
-	color: $color-primary;
- }
- 
- blockquote p::after {
-	content: "”";
-	margin: -1rem -4rem 0 0;
- }
- 
-//  blockquote 
+// blockquote {
+//   // color: rgba(0, 0, 0, 0.6);
+//   font-family: Tahoma, sans-serif;
+//   font-size: 40px;
+//   // width: 60%;
+//   margin: 5vw auto;
+//   &:before {
+//     color: transparent;
+//   }
+//   cite {
+//     // color: $color-primary;
+//     font-size: 1.5rem;
+//     float: right;
+//   }
+// }
+// blockquote h1 {
+//   font-size: 4rem;
+// }
+// blockquote p {
+//   font-style: italic;
+//   margin-bottom: 0;
+// }
+
+// blockquote p::before,
+// blockquote p::after {
+//   content: '“';
+//   font-family: Georgia;
+//   font-size: 8rem;
+//   margin: -2rem 0 0 -4rem;
+//   position: absolute;
+//   opacity: 0.5;
+//   color: $color-primary;
+// }
+
+// blockquote p::after {
+//   content: '”';
+//   margin: -1rem -4rem 0 0;
+// }
+
+// //  blockquote

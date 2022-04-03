@@ -1,9 +1,8 @@
-export default function PhoneIcon() {
+export default function Icon(props) {
+  const { width, height, src, color } = props;
   return (
-    <div className='icon'>
-      <img height='32' width='32' src='/icons/phone-line.svg' />
-      <i class='ri-admin-line'></i>
-      <i class='ri-admin-fill'></i>
+    <div className=''>
+      <img className={color} height={height} width={width} src={src} />
     </div>
   );
 }
