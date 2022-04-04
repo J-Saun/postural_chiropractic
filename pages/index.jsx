@@ -66,8 +66,8 @@ export default function Home() {
           // content={heroContent}
         />
         <Quote />
+        {/* <div className='break-line container' /> */}
         <Info content={infoOne} img={'/checkup-female.jpg'} />
-        <div className='break-line container' />
         <InfoReverse content={infoTwo} img={'/yoga-female.jpg'} />
         <CTA content={supplementCTA} />
         <Footer />

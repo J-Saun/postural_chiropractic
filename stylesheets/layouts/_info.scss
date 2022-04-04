@@ -4,9 +4,9 @@
   width: 100vw;
   .info-img {
     height: auto;
-    background-image: url('/checkup-female.jpg');
     background-color: #cccccc;
-    background-position: top;
+    background-image: url('/checkup-female.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -21,8 +21,8 @@
 
   @include media-breakpoint-up(sm) {
     // height: 40vh;
-    position: relative;
-    overflow: hidden;
+    // position: relative;
+    // overflow: hidden;
     justify-content: space-between;
 
     .info-img {
@@ -45,7 +45,7 @@
       margin-right: 5vw;
       text-align: start;
       p {
-        @include fluid-type(21px, 30px);
+        @include fluid-type(18px, 26px);
         font-weight: normal;
         text-align: start;
         font-weight: 600;
@@ -56,12 +56,15 @@
     }
   }
 }
+
 .info-wrapper-reverse {
   text-align: center;
-
+  .info-img {
+    margin: 0;
+  }
   .body {
     padding: 2vw;
-
+    flex-grow: 1;
     p {
       @include fluid-type(16px, 20px);
       font-weight: normal;
@@ -89,7 +92,7 @@
       width: 30vw;
 
       p {
-        @include fluid-type(30px, 35px);
+        @include fluid-type(20px, 30px);
         font-weight: normal;
         text-align: start;
         font-weight: 600;

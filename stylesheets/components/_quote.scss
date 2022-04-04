@@ -1,5 +1,6 @@
 .quotation {
-  font-size: 30px;
+  // font-size: 30px;
+  @include fluid-type(25px, 35px);
   margin: 0 auto;
   quotes: '\201C''\201D''\2018''\2019';
   padding: 10px 20px;

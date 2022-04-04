@@ -4,11 +4,14 @@
   padding: 1em;
   margin: 1em 0;
   text-align: center;
+  text-shadow: 0 1px 0 rgb(0, 0, 0);
 
   .cta-body {
     display: flex;
     justify-content: space-around;
-    font-size: 1.3em;
+    @include fluid-type(20px, 25px);
+    font-weight: 500;
+    margin: 0 8vw;
     padding: 1em;
     margin-bottom: 1em;
   }

@@ -5,7 +5,7 @@ export default function InfoReverse(props) {
   return (
     <>
       <>
-        <div className='info-wrapper-reverse container flex'>
+        <div className='info-wrapper-reverse container flex mb-5'>
           <div className='body text-center'>
             <p>{content}</p>
           </div>
