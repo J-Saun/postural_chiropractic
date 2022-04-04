@@ -11,12 +11,12 @@
 
 // Utilities
 @import 'utilities/accessibility';
+@import 'utilities/animation';
 @import 'utilities/clearing';
 @import 'utilities/flex';
 @import 'utilities/grid';
 @import 'utilities/spacing';
 @import 'utilities/sizing';
-@import 'utilities/typography';
 
 // Components
 @import 'components/avatars';
@@ -36,6 +36,7 @@
 @import 'layouts/announcement';
 @import 'layouts/cta';
 @import 'layouts/header';
+@import 'layouts/info';
 @import 'layouts/footer';
 @import 'layouts/hero';
 @import 'layouts/navbar';

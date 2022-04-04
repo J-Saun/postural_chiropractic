@@ -88,18 +88,18 @@ ins {
 }
 
 blockquote {
-  margin: 0 0 1em;
-  padding: 0 0 0 2.22222em;
-  position: relative;
+  // margin: 0 0 1em;
+  // padding: 0 0 0 2.22222em;
+  // position: relative;
 
   &:before {
-    color: transparent;
-    content: '\201C';
-    font-size: 2.66667em;
-    left: 0;
-    line-height: 1;
-    position: absolute;
-    top: 0;
+    // color: transparent;
+    // content: '\201C';
+    // font-size: 2.66667em;
+    // left: 0;
+    // line-height: 1;
+    // position: absolute;
+    // top: 0;
   }
 }
 
@@ -111,6 +111,12 @@ pre {
   overflow: auto;
   padding: 1.5em;
   white-space: pre;
+}
+
+.break-line {
+  border-bottom: 5px solid $color-primary;
+  margin: 2vw 50%;
+  // margin-left: auto;
 }
 
 .style-classic {

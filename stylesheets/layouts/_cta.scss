@@ -1,6 +1,23 @@
-// .cta-wrapper {
-//   background: $color-primary;
-//   color: white;
-//   padding: 1em;
-//   margin: 1em 0;
-// }
+.cta-wrapper {
+  background: $color-primary;
+  color: white;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+
+  .cta-body {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3em;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+
+    .cta-body {
+      padding: 0 5vw;
+    }
+  }
+}

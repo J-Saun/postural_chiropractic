@@ -28,6 +28,8 @@
 }
 
 .cta-btn {
+  height: fit-content;
+  // max-height: 70px;
   align-items: center;
   background-color: $color-btn-cta-bg;
   border: 2px solid transparent;

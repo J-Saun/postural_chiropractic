@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 // current logo image path
-import logo from '/public/logo/logo_blue_white_bg.svg';
+import logo from '/public/images/logo/logo_blue_white_bg.svg';
 
 export default function Logo(props) {
   const { width, height } = props;

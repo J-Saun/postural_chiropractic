@@ -16,11 +16,12 @@ export default function Hero(props) {
             width='750px'
             height='500px'
             layout='responsive' // layout="fill", layout="intrinsic"
+            priority='true'
           />
         </div>
         <div className='hero-content'>
-          <h1 className='hero__title mb-4'>{title}</h1>
-          <p className='hero__subtitle mb-4'>{subtitle}</p>
+          <h1 className='mb-4'>{title}</h1>
+          <h5 className='mb-4'>{subtitle}</h5>
           <CTAButton href={'services'} label={'Call To Action'} />
         </div>
       </div>

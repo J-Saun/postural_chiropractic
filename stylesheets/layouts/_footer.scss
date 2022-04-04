@@ -4,7 +4,7 @@
 
 .footer {
   color: white;
-  padding: 5vh 5vw;
+  padding: 5vw 0;
   //   font-size: 1.2em;
   background-color: $color-footer-bg;
 
@@ -50,7 +50,6 @@
 
   //  Social Media Icon Group
   .social-showcase {
-    width: 90vw;
     display: flex;
     justify-content: center;
   }
@@ -76,9 +75,6 @@
     }
   }
   @include media-breakpoint-up(sm) {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-around;
     .content {
       display: flex;
       flex-wrap: wrap;
@@ -89,39 +85,5 @@
       display: flex;
       justify-content: center;
     }
-
-    //     color: white;
-    //     padding: 5vw 0;
-    //     font-size: 1.2em;
-    //     background-color: $color-footer-bg;
-
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     .group {
-    //       max-width: 500px;
-    //       margin-bottom: 2em;
-    //       //  Highlight Txt That Links
-    //       .highlight {
-    //         color: $color-primary;
-    //       }
-
-    //       //  Title of footer sections
-    //       .footer-title {
-    //         display: flex;
-    //         border-left: 5px solid $color-highlight;
-    //         margin-bottom: 2vh;
-    //         padding: 0 1em;
-    //         font-size: 1.2em;
-    //         font-weight: 600;
-    //       }
-
-    //       a {
-    //         display: flex;
-    //         cursor: pointer;
-    //         padding: 0.3em 1.3em;
-    //         margin-bottom: 0.3em;
-    //         width: fit-content;
-    //       }
-    //     }
   }
 }

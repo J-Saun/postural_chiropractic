@@ -16,13 +16,13 @@ export default function Footer() {
   return (
     <footer className='footer'>
       {/* Social Links Top Row*/}
-      <div className='group'>
+      <div className='group mx-auto'>
         <div className='social-showcase'>
           <div>
             <Icon
               width={'50px'}
               height={'50px'}
-              src={'icons/facebook-line.svg'}
+              src={'images/icons/facebook-line.svg'}
               color={'filter-primary'}
             />
           </div>
@@ -30,7 +30,7 @@ export default function Footer() {
             <Icon
               width={'50px'}
               height={'50px'}
-              src={'icons/instagram-line.svg'}
+              src={'images/icons/instagram-line.svg'}
               color={'filter-primary'}
             />
           </div>
@@ -38,7 +38,7 @@ export default function Footer() {
             <Icon
               width={'50px'}
               height={'50px'}
-              src={'icons/linkedin-line.svg'}
+              src={'images/icons/linkedin-line.svg'}
               color={'filter-primary'}
             />
           </div>
@@ -56,7 +56,7 @@ export default function Footer() {
               <Icon
                 width={'40px'}
                 height={'40px'}
-                src={'icons/phone-fill.svg'}
+                src={'images/icons/phone-fill.svg'}
                 color={'filter-white'}
               />
             </div>
@@ -67,7 +67,7 @@ export default function Footer() {
               <Icon
                 width={'40px'}
                 height={'40px'}
-                src={'icons/printer-fill.svg'}
+                src={'images/icons/printer-fill.svg'}
                 color={'filter-white'}
               />
             </div>
@@ -79,7 +79,7 @@ export default function Footer() {
                 <Icon
                   width={'40px'}
                   height={'40px'}
-                  src={'icons/mail-line.svg'}
+                  src={'images/icons/mail-line.svg'}
                   color={'filter-white'}
                 />
               </div>
@@ -109,7 +109,7 @@ export default function Footer() {
                 <Icon
                   width={'40px'}
                   height={'40px'}
-                  src={'icons/map-pin-fill.svg'}
+                  src={'images/icons/map-pin-fill.svg'}
                   color={'filter-white'}
                 />
               </div>
@@ -140,6 +140,6 @@ export default function Footer() {
 // <Icon
 //   width={'40px'}
 //   height={'40px'}
-//   src={'icons/copyright-fill.svg'}
+//   src={'images/icons/copyright-fill.svg'}
 //   color={'filter-white'}
 // />
