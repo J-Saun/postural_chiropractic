@@ -1,119 +1,339 @@
 .info-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
   .info-img {
-    height: auto;
-    background-color: #cccccc;
+    width: auto;
+    height: 40vh;
+    background-color: #ffffff;
     background-image: url('/checkup-female.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
   .body {
-    padding: 2vw;
-    text-align: center;
+    margin-left: 2vw;
     p {
+      padding: 2vw 4vw;
+      border-left: 8px solid $color-primary;
       @include fluid-type(16px, 20px);
-      font-weight: normal;
+      font-weight: 600;
     }
   }
 
   @include media-breakpoint-up(sm) {
-    // height: 40vh;
-    // position: relative;
-    // overflow: hidden;
-    justify-content: space-between;
-
+    padding: 2vw;
     .info-img {
+      height: 400px;
+      width: auto;
+      background-color: #ffffff;
+      background-image: url('/checkup-female.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-bottom: 1em;
+    }
+    .body {
+      text-align: start;
+      p {
+        @include fluid-type(20px, 20px);
+        font-weight: 600;
+      }
+    }
+  }
+  @include media-breakpoint-up(md) {
+    padding: 2vw;
+    .info-img {
+      height: 50vh;
+      width: auto;
+      background-color: #ffffff;
+      background-image: url('/checkup-female.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-bottom: 1em;
+    }
+    .body {
+      text-align: start;
+      p {
+        @include fluid-type(20px, 20px);
+        font-weight: 600;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    // flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    height: 60vh;
+    margin: 5em 0;
+    // overflow: hidden;
+    // padding: 1em;
+    .info-img {
+      // display: inline-block;
       width: 60vw;
       height: auto;
+      margin: 0;
       border-radius: 5px;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       background-image: url('/checkup-female.jpg');
       background-color: #cccccc;
-      background-position: center;
+      background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
-        0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+      box-shadow: $shadow-long;
+    }
+
+    .body {
+      width: 40vw;
+      overflow: hidden;
+      padding: 1em;
+      height: fit-content;
+      // overflow: hidden;
+      // display: inline-block;
+      // margin-right: 5vw;
+      // text-align: start;
+      align-self: center;
+      p {
+        padding: 1vw;
+        margin: 0;
+        height: 100%;
+
+        @include fluid-type(17px, 20px);
+        // padding: 0 3em 0 1em;
+        //   font-weight: normal;
+        //   text-align: start;
+        //   font-weight: 600;
+        //   align-self: center;
+        //   border-left: 8px solid $color-primary;
+        //   padding: 0 1em;
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    height: 60vh;
+    margin: 5em 0;
+
+    // flex-direction: row;
+    // overflow: hidden;
+    // padding: 1em;
+    .info-img {
+      // display: inline-block;
+      width: 65vw;
+      height: auto;
+      margin: 0;
+      border-radius: 5px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      background-image: url('/checkup-female.jpg');
+      background-color: #cccccc;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: $shadow-long;
     }
 
     .body {
       width: 30vw;
-      margin-right: 5vw;
-      text-align: start;
+      overflow: hidden;
+      // padding: 1em;
+      // display: inline-block;
+      // margin-right: 5vw;
+      // text-align: start;
+      align-self: center;
       p {
-        @include fluid-type(18px, 26px);
-        font-weight: normal;
-        text-align: start;
-        font-weight: 600;
-        align-self: center;
-        border-left: 8px solid $color-primary;
-        padding: 0 1em;
+        padding: 1vw 2vw;
+        margin: 0;
+        height: 100%;
+
+        @include fluid-type(21px, 24px);
+        // padding: 0 3em 0 1em;
+        //   font-weight: normal;
+        //   text-align: start;
+        //   font-weight: 600;
+        //   align-self: center;
+        //   border-left: 8px solid $color-primary;
+        //   padding: 0 1em;
       }
     }
   }
 }
 
 .info-wrapper-reverse {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+
   .info-img {
-    margin: 0;
+    width: 50vw;
+    height: 50vh;
+    background-color: #fff;
+    background-image: url('/yoga-female.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .body {
-    padding: 2vw;
-    flex-grow: 1;
+    width: 40vw;
+    height: fit-content;
+    align-self: center;
     p {
-      @include fluid-type(16px, 20px);
-      font-weight: normal;
+      border-left: 8px solid $color-primary;
+      padding: 2vw 4vw;
+      @include fluid-type(26px, 30px);
+      font-weight: 600;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .body {
+      text-align: start;
+      p {
+        @include fluid-type(26px, 30px);
+        font-weight: 600;
+      }
     }
   }
   @include media-breakpoint-up(sm) {
-    height: 65vh;
-    position: relative;
+    // height: 40vh;
+    // box-sizing: border-box;
+    // width: 60vw;
+    // // position: relative;
+    // display: flex;
+    // justify-content: space-around;
     .info-img {
-      border-radius: 5px;
+      // border-radius: 5px;
       height: auto;
-      margin-left: 18%;
+      width: 30vw;
+      // margin-left: 18%;
       background-image: url('/yoga-female.jpg');
       background-color: #cccccc;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      width: 50vw;
       background-size: cover;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
-        0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
-        0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+      box-shadow: $shadow-long;
     }
     .body {
-      width: 30vw;
+      width: 25vw;
+      // width: fit-content;
+      padding: 0 1em;
 
       p {
         @include fluid-type(20px, 30px);
-        font-weight: normal;
-        text-align: start;
-        font-weight: 600;
-        align-self: center;
-        border-left: 8px solid $color-primary;
-        padding: 0 1em;
+        // font-weight: normal;
+        // text-align: start;
+        // font-weight: 600;
+        // align-self: center;
+        // // border-left: 8px solid $color-primary;
+      }
+    }
+  }
+  @include media-breakpoint-up(md) {
+    // height: 40vh;
+    // box-sizing: border-box;
+    // width: 60vw;
+    // // position: relative;
+    // display: flex;
+    // justify-content: space-around;
+    .info-img {
+      // border-radius: 5px;
+      height: auto;
+      width: 30vw;
+      // margin-left: 18%;
+      background-image: url('/yoga-female.jpg');
+      background-color: #cccccc;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-size: cover;
+      box-shadow: $shadow-long;
+    }
+    .body {
+      width: 25vw;
+      // width: fit-content;
+      padding: 0 1em;
+
+      p {
+        @include fluid-type(20px, 30px);
+        // font-weight: normal;
+        // text-align: start;
+        // font-weight: 600;
+        // align-self: center;
+        // // border-left: 8px solid $color-primary;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    // height: 40vh;
+    // box-sizing: border-box;
+    // width: 60vw;
+    // // position: relative;
+    // display: flex;
+    // justify-content: space-around;
+    .info-img {
+      // border-radius: 5px;
+      height: auto;
+      width: 30vw;
+      // margin-left: 18%;
+      background-image: url('/yoga-female.jpg');
+      background-color: #cccccc;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-size: cover;
+      box-shadow: $shadow-long;
+    }
+    .body {
+      width: 25vw;
+      // width: fit-content;
+      padding: 0 1em;
+
+      p {
+        @include fluid-type(20px, 30px);
+        // font-weight: normal;
+        // text-align: start;
+        // font-weight: 600;
+        // align-self: center;
+        // // border-left: 8px solid $color-primary;
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    // height: 40vh;
+    // box-sizing: border-box;
+    // width: 60vw;
+    // // position: relative;
+    // display: flex;
+    // justify-content: space-around;
+    .info-img {
+      // border-radius: 5px;
+      height: auto;
+      width: 30vw;
+      // margin-left: 18%;
+      background-image: url('/yoga-female.jpg');
+      background-color: #cccccc;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-size: cover;
+      box-shadow: $shadow-long;
+    }
+    .body {
+      width: 25vw;
+      // width: fit-content;
+      padding: 0 1em;
+
+      p {
+        @include fluid-type(20px, 30px);
+        // font-weight: normal;
+        // text-align: start;
+        // font-weight: 600;
+        // align-self: center;
+        // // border-left: 8px solid $color-primary;
       }
     }
   }
 }
-
-//   background-size: contain;
-/* One-value syntax */
-/* the width of the image (height becomes 'auto') */
-//   background-size: 45%;
-//   background-size: 3.2em;
-//   background-size: 12px;
-//   background-size: auto;
-/* Two-value syntax */
-/* first value: width of the image, second value: height */
-//   background-size: 50% auto;
-//   background-size: 3em 25%;
-//   background-size: auto 6px;
-//   background-size: auto auto;

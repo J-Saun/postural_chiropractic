@@ -258,7 +258,13 @@ $color-dark-secondary-sect-bg: #242a31 !default;
 
 // Box Shadows
 $shadow-short: '';
-$shadow-long: '0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09)';
+$shadow-long: (
+  0 2px 1px rgba(0, 0, 0, 0.09),
+  0 4px 2px rgba(0, 0, 0, 0.09),
+  0 8px 4px rgba(0, 0, 0, 0.09),
+  0 16px 8px rgba(0, 0, 0, 0.09),
+  0 32px 16px rgba(0, 0, 0, 0.09)
+);
 
 // Boxed layout
 $color-dark-boxed-bg: #1b2025 !default;
@@ -268,7 +274,7 @@ $color-dark-boxed-border: #2c343c !default;
 $media-breakpoints: (
   xs: 480px,
   sm: 640px,
-  md: 800px,
+  md: 767px,
   lg: 960px,
   xl: 1200px,
 ) !default;

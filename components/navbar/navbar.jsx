@@ -2,8 +2,8 @@ import Link from '../buttons/Link';
 import Logo from '../logo';
 
 export default function Navbar() {
-  const logoWidth = 70;
-  const logoHeight = 70;
+  const logoWidth = 50;
+  const logoHeight = 50;
   // Company Name
   const brandFirst = 'Postural ';
   const brandLast = 'Chiropractic';
@@ -27,7 +27,7 @@ export default function Navbar() {
           <span className='navbar-toggler-icon'></span>
         </button>
         <div
-          className='collapse navbar-collapse  text-center'
+          className='collapse navbar-collapse text-center bg-light'
           id='navbarToggler'
         >
           <div className='navbar__title h4 m-0 navbar-brand'>
