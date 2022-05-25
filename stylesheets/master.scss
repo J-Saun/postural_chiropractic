@@ -28,6 +28,7 @@
 @import 'components/icons';
 @import 'components/forms';
 @import 'components/menus';
+@import 'components/card';
 @import 'components/quote';
 @import 'components/tables';
 @import 'components/text-block';
@@ -44,6 +45,9 @@
 @import 'layouts/post';
 @import 'layouts/section';
 @import 'layouts/site';
+
+//Pages
+@import 'pages/services';
 
 // Color variations
 @import 'variations/modes';

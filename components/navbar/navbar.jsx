@@ -40,13 +40,13 @@ export default function Navbar() {
             <Link href={'/'} {...attrs} className={'nav-item active'}>
               Home
             </Link>
-            <Link className={'nav-item'} href='/about'>
+            <Link className={'nav-item'} href='#about'>
               About
             </Link>{' '}
-            <Link className={'nav-item'} href='/services'>
+            <Link className={'nav-item'} href='#services'>
               Services
             </Link>{' '}
-            <Link className={'nav-item'} href='/contact'>
+            <Link className={'nav-item'} href='#footer'>
               Contact
             </Link>
           </div>

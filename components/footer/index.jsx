@@ -4,7 +4,7 @@ import Icon from '../icons';
 export default function Footer() {
   const phone = '(904)330-4727';
   const fax = '(904)375-1170';
-  const email = 'dcwelfare@gmail.com';
+  const email = 'DrWelfare@PosturalChiropractic.com';
   const days = 'Monday - Friday';
   const hours = '9:00 AM - 6:00 PM';
   const hoursMsg = 'Extended hours upon request';
@@ -14,7 +14,7 @@ export default function Footer() {
   // <Logo width={'100'} />
 
   return (
-    <footer className='footer'>
+    <footer id='footer' className='footer'>
       {/* Social Links Top Row*/}
       <div className='group mx-auto'>
         <div className='social-showcase'>
@@ -40,6 +40,7 @@ export default function Footer() {
               height={'50px'}
               src={'images/icons/linkedin-line.svg'}
               color={'filter-primary'}
+              // href='https://www.linkedin.com/in/evan-welfare-67a27723b/'
             />
           </div>
         </div>
@@ -75,14 +76,14 @@ export default function Footer() {
           </a>
           <div className=''>
             <a>
-              <div className='icon-wrapper'>
+              {/* <div className='icon-wrapper'>
                 <Icon
                   width={'40px'}
                   height={'40px'}
                   src={'images/icons/mail-line.svg'}
                   color={'filter-white'}
                 />
-              </div>
+              </div> */}
               <span className='my-auto'>{email}</span>
             </a>
           </div>

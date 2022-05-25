@@ -7,7 +7,7 @@ const Contact = () => {
   const subHeadline = 'Appointments Only';
   const phone = '(904)330-4727';
   const fax = '(904)330-4727';
-  const email = 'drwelfare@posturalchiropractic.com';
+  const email = 'DrWelfare@PosturalChiropractic.com';
   const days = 'Monday - Friday';
   const hours = '9:00 AM - 6:00 PM';
   const hoursMsg = 'Extended hours upon request';

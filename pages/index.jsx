@@ -3,6 +3,12 @@ import Script from 'next/script';
 
 import Head from 'next/head';
 import { SectionBg } from '../components/sectionBackground';
+import {
+  CardOne,
+  CardTwo,
+  CardThree,
+  CardFour,
+} from '../components/cards/cards';
 import Hero from '../components/hero';
 import Quote from '../components/section/quote';
 import Info from '../components/section/info';
@@ -37,6 +43,8 @@ export default function Home() {
   const infoOne = `Here at Postural Chiropractic, we customize every individual care plan to meet your needs. The key is to identify the root cause of your health issue/s that you're facing, not to put a “band-aid on it” (masking the symptoms), and send you on your way.`;
   const infoTwo =
     'We will take the time to address your concerns so you feel confident when leaving the office.';
+  const gymCTA =
+    'Getting in shape is important when it comes to your health. We have partnered with Training Evolved for lorem ipsum.';
   const supplementCTA =
     'Check out this great line of supplements. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...';
 
@@ -45,6 +53,49 @@ export default function Home() {
   const aboutService =
     'The Chiropractic adjustment is a means to restore proper posture and relieve nerve interference within the nervous and musculoskeletal system. Relieving nerve interference can help with ';
 
+  const cards = [
+    {
+      title: 'Graston Technique',
+      description: 'Soft-tissue instrument-assisted mobilization.',
+      includes1: 'Chiropractic Therapies',
+      includes2: 'Consultation',
+      includes3: 'Postural Analyses',
+      oldPrice: '$150',
+      price: '$75',
+      priceUnit: ' per visit',
+      key: 1,
+    },
+    {
+      title: 'New Patient Special',
+      description: 'For first time patients',
+      includes1: 'Vibratory Massage Treatment',
+      includes2: 'Chiropractic Alignment',
+      includes3: 'need a third descriptor',
+      oldPrice: '$120',
+      price: '$40',
+      priceUnit: ' (first visit only)',
+
+      key: 2,
+    },
+    {
+      title: 'Wellness Plan Subscription',
+      description: 'Subscribe to our  wellness plan for even better prices!',
+      includes1: 'Chiropractic Therapy',
+      includes2: 'Alignment',
+      includes3: 'Vibratory Massage',
+      price: '$100',
+      priceUnit: ' per month (2 mo. min)',
+      key: 3,
+    },
+    // {
+    //   title: 'Service Four',
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat nibh sed pulvinar proin. Eu turpis egestas pretium aenean.',
+    //   price: 'Call For Pricing',
+    //   priceUnit: '',
+    //   key: 4,
+    // },
+  ];
   return (
     <>
       <Head
@@ -56,7 +107,7 @@ export default function Home() {
           type='text/javascript'
           src='./public/javascripts/animations.js'
         />
-        <Script type='text/javascript' src='./assets/js/main.js' /> */}
+        {/* <Script type='text/javascript' src='./assets/js/main.js' /> */} */}
       </Head>
       <div className=''>
         <Hero
@@ -67,9 +118,38 @@ export default function Home() {
         />
         <Quote />
         {/* <div className='break-line container' /> */}
-        <Info content={infoOne} img={'/checkup-female.jpg'} />
+        <Info id='about' content={infoOne} img={'/checkup-female.jpg'} />
         <InfoReverse content={infoTwo} img={'/yoga-female.jpg'} />
+        <CTA content={gymCTA} />
+        <div id='services' className='container card-wrapper'>
+          {cards.map(
+            ({
+              title,
+              description,
+              price,
+              priceUnit,
+              includes1,
+              includes2,
+              includes3,
+              button,
+              key,
+            }) => (
+              <CardOne
+                // className='price-card'
+                title={title}
+                description={description}
+                price={price}
+                priceUnit={priceUnit}
+                includes1={includes1}
+                includes2={includes2}
+                includes3={includes3}
+                key={key}
+              />
+            )
+          )}
+        </div>
         <CTA content={supplementCTA} />
+
         <Footer />
       </div>
     </>

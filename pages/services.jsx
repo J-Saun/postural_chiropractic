@@ -14,27 +14,37 @@ const Services = () => {
   // Page Content
   const cards = [
     {
-      title: 'Service One',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc. Quis vel eros donec.',
-      price: '$50',
-      priceUnit: ' per visit',
+      title: 'New Patient Special',
+      description: 'If this is your first visit Lorem ipsum dolor sit amet!',
+      includes1: 'Chiropractic Therapies',
+      includes2: 'Consultation',
+      includes3: 'Postural Analyses',
+      oldPrice: '$120',
+      price: '$40',
+      priceUnit: ' 1st visit',
       key: 1,
     },
     {
-      title: 'Service Two',
+      title: ' Graston Technique',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin ac. Arcu non odio euismod lacinia at.',
-      price: '$100',
+        'A form of manual therapy known as soft-tissue instrument-assisted mobilization.',
+      includes1: 'Vibratory Massage Treatment',
+      includes2: 'Chiropractic Alignment',
+      includes3: '',
+      oldPrice: null,
+      price: '$75',
       priceUnit: ' per visit',
       key: 2,
     },
     {
-      title: 'Service Three',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat nibh sed pulvinar proin. Eu turpis egestas pretium aenean.',
-      price: '$150',
+      title: 'Wellness Plan',
+      description: 'Subscribe to our  wellness plan for even better prices!',
+      includes1: 'Chiropractic Therapy',
+      includes2: 'Alignment',
+      includes3: 'Vibratory Massage',
+      price: '$100',
       priceUnit: ' per month',
+      note: '2 Month Minimum',
       key: 3,
     },
     // {
@@ -68,11 +78,12 @@ const Services = () => {
         ></link> */}
       </Head>
       <div className='services-page'>
-        <h2>Card Set 1</h2>
-        <div className='container flex flex-wrap'>
+        {/* <h2>Card Set 1</h2> */}
+        <div className='container card-wrapper'>
           {cards.map(
             ({ title, description, price, priceUnit, button, key }) => (
               <CardOne
+                // className='price-card'
                 title={title}
                 description={description}
                 price={price}

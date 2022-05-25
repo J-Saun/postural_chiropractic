@@ -1,0 +1,115 @@
+// .card-wrapper {
+//   width: 100%;
+//   display: flex;
+//   //   max-width: 400px;
+//   //   //   height: 50vh;
+//   //   flex-wrap: wrap;
+//   //   justify-content: space-around;
+// }
+// .price-card {
+//   //   background-color: black;
+//   color: white;
+//   text-align: center;
+//   border: 1px solid black;
+//   border-radius: 5px;
+
+//   //   padding: 3em;
+//   margin: 1em;
+//   .header {
+//     p {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       margin: 0;
+//       font-weight: bold;
+//     }
+//     justify-content: center;
+//     background-color: $color-primary;
+//     padding: 1em 0.5em;
+//   }
+//   .body {
+//     color: black;
+//     padding: 2em 1em;
+//   }
+//   .includes {
+//     color: red;
+//   }
+//   .cta {
+//     padding: 2em;
+//   }
+// }
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: auto;
+  padding: 2em;
+  font-family: 'Roboto', sans-serif;
+  color: #10182f;
+}
+.card-container {
+  display: flex;
+  //   width: 1040px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 10px;
+  // min-width: 350px;
+  display: flex;
+  align-self: stretch;
+  //   padding: 1em;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+.card-header {
+  text-align: center;
+  background-color: $color-primary;
+  color: white;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+}
+.card-price {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: $color-highlight;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.tag-teal {
+  background-color: #47bcd4;
+}
+.tag-purple {
+  background-color: #5e76bf;
+}
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+
+.user-info h5 {
+  margin: 0;
+}

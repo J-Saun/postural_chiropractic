@@ -21,8 +21,8 @@ export default function Hero(props) {
         </div>
         <div className='hero-content'>
           <h1 className='mb-4'>{title}</h1>
-          <h5 className='mb-4'>{subtitle}</h5>
-          <CTAButton href={'services'} label={'Call To Action'} />
+          <h4 className='mb-4'>{subtitle}</h4>
+          {/* <CTAButton href='#footer' label={'Schedule Now!'} /> */}
         </div>
       </div>
     </section>
