@@ -7,6 +7,7 @@ export function CardOne(props) {
     includes1,
     includes2,
     includes3,
+    includes4,
     priceUnit,
     price,
     note,
@@ -72,6 +73,7 @@ export function CardOne(props) {
               <li>{includes1}</li>
               <li>{includes2}</li>
               <li>{includes3}</li>
+              <li>{includes4}</li>
             </ul>
             {/* <div class='user'>
               <img

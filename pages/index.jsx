@@ -56,10 +56,12 @@ export default function Home() {
   const cards = [
     {
       title: 'Graston Technique',
-      description: 'Soft-tissue instrument-assisted mobilization.',
-      includes1: 'Chiropractic Therapies',
-      includes2: 'Consultation',
+      description: '',
+      // description: 'Soft-tissue instrument-assisted mobilization.',
+      includes1: 'Consultation',
+      includes2: 'Chiropractic Therapies',
       includes3: 'Postural Analyses',
+      includes4: 'Soft Tissue Mobilization',
       oldPrice: '$150',
       price: '$75',
       priceUnit: ' per visit',
@@ -67,10 +69,11 @@ export default function Home() {
     },
     {
       title: 'New Patient Special',
-      description: 'For first time patients',
-      includes1: 'Vibratory Massage Treatment',
+      // description: 'For first time patients',
+      includes1: 'Consoletation & Exam',
       includes2: 'Chiropractic Alignment',
-      includes3: 'need a third descriptor',
+      includes3: 'Vibro-Massage Treatment',
+      includes4: 'X-ray if required is handled out of office',
       oldPrice: '$120',
       price: '$40',
       priceUnit: ' (first visit only)',
@@ -131,6 +134,7 @@ export default function Home() {
               includes1,
               includes2,
               includes3,
+              includes4,
               button,
               key,
             }) => (
@@ -143,6 +147,7 @@ export default function Home() {
                 includes1={includes1}
                 includes2={includes2}
                 includes3={includes3}
+                includes4={includes4}
                 key={key}
               />
             )
