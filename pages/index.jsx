@@ -44,9 +44,9 @@ export default function Home() {
   const infoTwo =
     'We will take the time to address your concerns so you feel confident when leaving the office.';
   const gymCTA =
-    'Getting in shape is important when it comes to your health. We have partnered with Training Evolved for lorem ipsum.';
+    'Getting in shape is important when it comes to your health. We have partnered with Training Evolved to enhance our wellness goals.';
   const supplementCTA =
-    'Check out this great line of supplements. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...';
+    'Check out this great line of wellness products! For more details check out the website and feel free to inquire during your next visit.';
 
   const subSlogan =
     'Chiropractic adjustment to align the spine and restore proper posture in order to relieve nerve interference within the nervous and musculoskeletal system';
@@ -112,7 +112,7 @@ export default function Home() {
           type='text/javascript'
           src='./public/javascripts/animations.js'
         />
-        {/* <Script type='text/javascript' src='./assets/js/main.js' /> */} */}
+        {/* <Script type='text/javascript' src='./assets/js/main.js' /> */}
       </Head>
       <div className=''>
         <Hero
